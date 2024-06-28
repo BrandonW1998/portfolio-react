@@ -8,8 +8,16 @@ import {
   FaJava,
   FaMicrosoft,
 } from "react-icons/fa";
-
 import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "@/components/ui/tooltip";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { ScrollArea } from "@/components/ui/scroll-area";
+import { motion } from "framer-motion";
 
 // About data
 const about = {
@@ -34,12 +42,12 @@ const about = {
       fieldValue: "BrandonW1998",
     },
     {
-      fieldName: "Email",
-      fieldValue: "brandon.westbrook98@gmail",
+      fieldName: "Gmail",
+      fieldValue: "brandon.westbrook98",
     },
     {
       fieldName: "Nationality",
-      fieldValue: "Asian-American",
+      fieldValue: "American, Filipino",
     },
   ],
 };
@@ -116,16 +124,6 @@ const skills = {
     },
   ],
 };
-
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import {
-  Tooltip,
-  TooltipContent,
-  TooltipProvider,
-  TooltipTrigger,
-} from "@/components/ui/tooltip";
-import { ScrollArea } from "@/components/ui/scroll-area";
-import { motion } from "framer-motion";
 
 const Resume = () => {
   return (
@@ -211,7 +209,6 @@ const Resume = () => {
                 </ScrollArea>
               </div>
             </TabsContent>
-
             {/* Skills */}
             <TabsContent value="skills" className="w-full h-full">
               <div className="flex flex-col gap-[30px]">
@@ -243,10 +240,30 @@ const Resume = () => {
                 </ul>
               </div>
             </TabsContent>
-
             {/* About */}
-            <TabsContent value="about" className="w-full">
-              about
+            <TabsContent
+              value="about"
+              className="w-full text-center xl:text-left"
+            >
+              <div className="flex flex-col gap-[30px]">
+                <h3 className="text-4xl font-bold">{about.title}</h3>
+                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
+                  {about.description}
+                </p>
+                <ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-6 max-w-[620px] mx-auto xl:mx-0">
+                  {about.info.map((item, index) => {
+                    return (
+                      <li
+                        key={index}
+                        className="flex items-center justify-center xl:justify-start gap-4"
+                      >
+                        <span className="text-white/60">{item.fieldName}</span>
+                        <span className="text-xl">{item.fieldValue}</span>
+                      </li>
+                    );
+                  })}
+                </ul>
+              </div>
             </TabsContent>
           </div>
         </Tabs>
