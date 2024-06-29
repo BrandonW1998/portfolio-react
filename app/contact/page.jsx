@@ -53,7 +53,7 @@ const Contact = () => {
             <form className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl">
               <h3 className="text-4xl text-accent">Let's work together</h3>
               <p className="text-white/60">
-                This is sample text. This is sample text. This is sample text.
+                Potential job offers preferably at my phone or email listed.
               </p>
               {/* Input */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -70,9 +70,9 @@ const Contact = () => {
                 <SelectContent>
                   <SelectGroup>
                     <SelectLabel>Select a service</SelectLabel>
-                    <SelectItem value="est">Web development</SelectItem>
+                    <SelectItem value="est">Web Development</SelectItem>
                     <SelectItem value="cst">UI/UX Design</SelectItem>
-                    <SelectItem value="mst">Logo Design</SelectItem>
+                    <SelectItem value="mst">Position Inquiry</SelectItem>
                   </SelectGroup>
                 </SelectContent>
               </Select>
