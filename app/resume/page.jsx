@@ -23,7 +23,7 @@ import { motion } from "framer-motion";
 const about = {
   title: "About me",
   description:
-    "This is sample text. This is sample text. This is sample text. This is sample text.",
+    "Growing up in a military household, to a single mother, I have the dicipline and focus to get work done efficiently and on-time. While also enjoying simpler activities in my free-time including cooking, video games, and excercise.",
   info: [
     {
       fieldName: "Name",
@@ -56,7 +56,8 @@ const about = {
 const experience = {
   icon: "/assets/resume/badge.svg",
   title: "My experience",
-  description: "This is sample text. This is sample text. This is sample text.",
+  description:
+    "Limited professional experience, but ready and willing to work ASAP.",
   items: [
     {
       company: "Coming Soon",
@@ -70,7 +71,8 @@ const experience = {
 const education = {
   icon: "/assets/resume/cap.svg",
   title: "My education",
-  description: "This is sample text. This is sample text. This is sample text.",
+  description:
+    "Recent graduate of UNF, Go Ospreys! With a passion for expanding my knowledge even further beyond my degree.",
   items: [
     {
       institution: "University of North Florida",
@@ -88,7 +90,8 @@ const education = {
 // Skills data
 const skills = {
   title: "My skills",
-  description: "This is sample text. This is sample text. This is sample text.",
+  description:
+    "Proficiency utilizing a plethora of languages, frameworks, programs, etc.",
   skillList: [
     {
       icon: <FaHtml5></FaHtml5>,
