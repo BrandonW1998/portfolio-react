@@ -9,28 +9,28 @@ const services = [
     num: "01",
     title: "Web Development",
     description:
-      "This is sample text. This is sample text. This is sample text.",
+      "Worked on several personal and professional web-based apps and sites.",
     href: "",
   },
   {
     num: "02",
     title: "App Development",
     description:
-      "This is sample text. This is sample text. This is sample text.",
+      "Introductory knowledge of game development tools used for creating iOS/Android/Web apps. (Flutter, Flame, Android Studio, etc.).",
     href: "",
   },
   {
     num: "03",
     title: "UI/UX Design",
     description:
-      "This is sample text. This is sample text. This is sample text.",
+      "Passionate about creating smooth and visually appealing interfaces for users to interact with.",
     href: "",
   },
   {
     num: "04",
-    title: "Logo Design",
+    title: "Team Player",
     description:
-      "This is sample text. This is sample text. This is sample text.",
+      "Ready and willing to work alongside other developers to pursue greater team knowledge and efficiency.",
     href: "",
   },
 ];
