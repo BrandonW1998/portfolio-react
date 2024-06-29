@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { FiDownload } from "react-icons/fi";
+import { FaRegFilePdf } from "react-icons/fa";
 
 // Components
 import Social from "@/components/Social";
@@ -20,7 +20,7 @@ const Home = () => {
             </h1>
             <p>
               I am a hard-working and analytical individual, with knowledge
-              spanning many programming languages and frameworks.
+              spanning several programming languages and frameworks.
             </p>
             {/* Button and Social */}
             <div className="flex flex-col xl:flex-row items-center gap-8">
@@ -29,8 +29,10 @@ const Home = () => {
                 size="lg"
                 className="uppercase flex items-center gap-2"
               >
-                <span>Download CV</span>
-                <FiDownload className="text-xl"></FiDownload>
+                <a href="/bw_resume_sdev.pdf" target="_blank">
+                  Download CV
+                </a>
+                <FaRegFilePdf className="text-xl"></FaRegFilePdf>
               </Button>
               <div className="mb-8 xl:mb-0">
                 <Social
